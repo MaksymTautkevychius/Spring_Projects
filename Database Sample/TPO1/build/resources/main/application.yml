@@ -1,0 +1,9 @@
+pl:
+  edu:
+    pja:
+      tpo02:
+        filename: "src/main/resources/dictionary.csv"
+spring:
+  banner:
+    charset: utf-8
+    location: "logo-app"

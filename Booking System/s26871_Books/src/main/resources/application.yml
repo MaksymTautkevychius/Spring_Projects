@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: s26871_Books
+  datasource:
+    url: jdbc:h2:file:./src/main/resources/db
+    username: sa
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: update
+    defer-datasource-initialization: true
+  h2:
+    console:
+      path: /my-h2-console
+      enabled: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations:  classpath:sql_data/publishers.sql ,classpath:sql_data/authors.sql ,classpath:sql_data/book.sql

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+<body>
+<h2>Converter</h2>
+<form action="/convert" method="post">
+    <label for="number">Enter a number:</label><br>
+    <input type="text" id="number" name="number"><br>
+    <label for="InputType">Input Type:</label><br>
+    <input type="number" id="InputType" name="InputType" min="2" max="100"><br>
+    <label for="OutputType">Output Type:</label><br>
+    <input type="number" id="OutputType" name="OutputType" min="2" max="100"><br><br>
+    <button type="submit">Convert</button>
+</form>
+</body>
+</html>
